@@ -1,0 +1,16 @@
+login-----------
+registracija---------
+admin panel(upravljanje korisnicima)--------
+ucitavanje destinacija iz baze(paginacija)---------
+dodavanje destinacija(admin)-------
+brisanje destinacija(admin)------------
+zakazivanje letovanja(za ulogovanog usera)----------
+title--------------
+profile page(profile picture...)-----------
+help button--------------
+
+chat room-------------------
+
+
+regex mail (register i kontakt)
+kontakt strana--------------

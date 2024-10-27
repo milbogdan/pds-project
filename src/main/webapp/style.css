@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+    padding: 0;
+
+
+}
+body::-webkit-scrollbar {
+    width: 0em;
+}
+
+
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    margin:auto;
+    margin-top: 20px;
+    width: 1200px;
+
+}
+.content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+header {
+    background-color: rgba(87, 178, 206, 0.5);
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu li a {
+    color: initial;
+    text-decoration: none;
+    transition: color 0.5s;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    line-height: 40px;
+    max-height: 40px;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 0 20px;
+    font-size: 16px;
+}
+.right-menu {
+    display: flex;
+    margin-left: auto;
+}
+#logout,#username {
+    margin-left: 10px;
+}
+
+.menu li a:hover{
+    color:rgb(255, 255, 255);
+    background-color: rgb(69, 59, 86, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    /* font-size: 18px; */
+}
+.menu li:hover ul {
+    display: block;
+}
+
+.menu ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    top: 100%;
+    left: 0;
+}
+
+.menu ul li {
+    width: 100%;
+}
+
+.menu ul li a {
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
+.selektovano{
+    background-color: rgba(41, 83, 173, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+
+}
+
+.logout {
+    margin-left: auto;
+}
+
+.gallery {
+    padding-top:20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.image {
+    text-align: center;
+
+}
+
+.image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.6s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+.image img:hover {
+    transform: scale(1.1);
+}
+
+.image p {
+    margin-top: 10px;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+label {
+    font-weight: bold;
+}
+
+select, input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="number"] {
+    width: 50px;
+}
+
+button {
+    background-color: rgba(41, 83, 173, 0.9);
+    transition: background-color 0.3s ease;
+    transition:  box-shadow 1s;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgb(69, 59, 86, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+.content-cenovnik {
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-container {
+    /* flex: 1; */
+    margin-right: 20px;
+    width: 300px;
+}
+
+.informacije {
+    display: flex;
+    flex: 1;
+    height: 300px;
+}
+.login-spoljasnji {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 7%;
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-unutrasnji {
+    text-align: center;
+    width: 300px;
+}
+.register-spoljasnji {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 7%;
+    width: 450px;
+    height: fit-content;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.register-unutrasnji {
+    text-align: center;
+    width: 300px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#cenovnikSlika{
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+#sve{
+    position: relative;
+    padding-left:50px ;
+    padding-top: 0;
+    font-size: 18px;
+    width: 100%;
+}
+#sve b{
+    font-size: 22px;
+}
+#ponisti{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+#mapa{
+    padding-top:50px;
+    width: 100%;
+    height: 600px;
+}
+#mapaa{
+    width: 100%;
+    height: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    border-radius: 1%;
+}
+
+footer {
+
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 1200px;
+    margin:auto;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.linija {
+    height: 1px;
+    background-color: #000;
+    margin-bottom: 10px;
+}
+
+.footer-tekst {
+    font-size: 16px;
+}
+#registracijaGost{
+    display: flex;
+    justify-content: space-evenly;
+}
+#registracija ,#gost {
+    color: rgba(41, 83, 173, 0.9);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+    margin-top:10px;
+}
+
+
+#registracija:hover, #gost:hover {
+    color: rgb(69, 59, 86, 0.9);
+}
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
